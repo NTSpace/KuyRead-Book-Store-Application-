@@ -19,7 +19,7 @@ class AddToCart extends StatelessWidget {
       child: Row(
         children: <Widget>[
           Container(
-            margin: EdgeInsets.only(right: kDefaultPaddin),
+            margin: const EdgeInsets.only(right: kDefaultPaddin),
             height: 50,
             width: 58,
             decoration: BoxDecoration(
@@ -46,7 +46,7 @@ class AddToCart extends StatelessWidget {
                 onPressed: () {},
                 child: Text(
                   "Check Out".toUpperCase(),
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 17,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:goread/constants.dart';
 import 'package:goread/models/product.dart';
 import 'package:goread/screens/details/components/product_title_with_image.dart';
@@ -43,15 +42,15 @@ class Body extends StatelessWidget {
                   child: Column(
                     children: <Widget>[
                       ColorAndPage(product: product),
-                      SizedBox(
+                      const SizedBox(
                         height: kDefaultPaddin / 2,
                       ),
                       Description(product: product),
-                      SizedBox(
+                      const SizedBox(
                         height: kDefaultPaddin / 2,
                       ),
-                      CounterWithFavBtn(),
-                      SizedBox(
+                      const CounterWithFavBtn(),
+                      const SizedBox(
                         height: kDefaultPaddin / 2,
                       ),
                       AddToCart(product: product)
