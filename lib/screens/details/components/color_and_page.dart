@@ -57,14 +57,15 @@ class ColorAndPage extends StatelessWidget {
 }
 
 class ColorDot extends StatelessWidget {
-  final Color color;
-  // by default isSelected is false
-  final bool isSelected;
   const ColorDot({
     Key? key,
     required this.color,
     this.isSelected = false,
   }) : super(key: key);
+
+  final Color color;
+  // by default isSelected is false
+  final bool isSelected;
 
   @override
   Widget build(BuildContext context) {

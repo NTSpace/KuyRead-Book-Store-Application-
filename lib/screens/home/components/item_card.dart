@@ -4,13 +4,14 @@ import 'package:goread/models/product.dart';
 import '../../../constants.dart';
 
 class ItemCard extends StatelessWidget {
-  final Product product;
-  final VoidCallback press;
   const ItemCard({
     Key? key,
     required this.product,
     required this.press,
   }) : super(key: key);
+
+  final VoidCallback press;
+  final Product product;
 
   @override
   Widget build(BuildContext context) {

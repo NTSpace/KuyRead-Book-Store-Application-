@@ -12,6 +12,23 @@ class CartCounter extends StatefulWidget {
 class _CartCounterState extends State<CartCounter> {
   int jmlhItems = 1;
 
+  SizedBox buildOutlineButton(
+      {required IconData icon, required VoidCallback press}) {
+    return SizedBox(
+      width: 40,
+      height: 32,
+      // ignore: deprecated_member_use
+      child: OutlineButton(
+        padding: EdgeInsets.zero,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(13),
+        ),
+        onPressed: press,
+        child: Icon(icon),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -41,23 +58,6 @@ class _CartCounterState extends State<CartCounter> {
               });
             })
       ],
-    );
-  }
-
-  SizedBox buildOutlineButton(
-      {required IconData icon, required VoidCallback press}) {
-    return SizedBox(
-      width: 40,
-      height: 32,
-      // ignore: deprecated_member_use
-      child: OutlineButton(
-        padding: EdgeInsets.zero,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(13),
-        ),
-        onPressed: press,
-        child: Icon(icon),
-      ),
     );
   }
 }
